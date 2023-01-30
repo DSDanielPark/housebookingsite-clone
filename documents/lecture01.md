@@ -56,6 +56,8 @@
         - Method
         - Constructor: class 생성시 호출되는 함수   
 
+<br>
+
 6. 생성자 init 메서드의 self는 TypeScript나 JavaScript에서 사용하는 this랑 동일
 
     ```JavaScript
@@ -181,7 +183,7 @@
 8. __str__ 및 오버라이딩
 
     8.1 객체의 주소가 반환됨
-    
+
     ```python
     class Dog:
         def __init__(self, name):
@@ -238,29 +240,29 @@
     8.4 Dog이 어떤 클래스로부터 확장되고 있지 않아도, 우리 Dog 클래스는 파이썬 클래스의 객체이므로 그냥 super를 갖고 있음.
 
 
-        ```python
-        class Dog:
-            def __init__(self, name):
-                self.name = name
-            def __str__(self):
-                print(super().__str__())
-                return f"Dog Name: {self.name}"
-            
-        my_dog = Dog("nu_rung2")
-        print(my_dog)
-
-        friend_dog = Dog("hin_dung2")
-        print(friend_dog) #계속 오버라이딩 됨
+    ```python
+    class Dog:
+        def __init__(self, name):
+            self.name = name
+        def __str__(self):
+            print(super().__str__())
+            return f"Dog Name: {self.name}"
         
-        <__main__.Dog object at 0x000001B2C29D5988>
-        Dog Name: nu_rung2
-        <__main__.Dog object at 0x000001B2C29D5B08>
-        Dog Name: hin_dung2
+    my_dog = Dog("nu_rung2")
+    print(my_dog)
 
-        print(dir(my_dog)) # 으로 클래스 내의 객체들을 확인할 수 있음.
+    friend_dog = Dog("hin_dung2")
+    print(friend_dog) #계속 오버라이딩 됨
+    
+    <__main__.Dog object at 0x000001B2C29D5988>
+    Dog Name: nu_rung2
+    <__main__.Dog object at 0x000001B2C29D5B08>
+    Dog Name: hin_dung2
 
-        print(jia.name)
-        ```
+    print(dir(my_dog)) # 으로 클래스 내의 객체들을 확인할 수 있음.
+
+    print(jia.name)
+    ```
 
 
     <br>
