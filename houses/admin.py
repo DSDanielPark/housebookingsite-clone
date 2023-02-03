@@ -10,4 +10,6 @@ from .models import House
 @admin.register(House)
 class HouseAdmin(admin.ModelAdmin):
 
-    pass
+    list_display = ['name', 'price', 'pets_ok']
+    list_filter = ['name']
+    search_fields = ['adress__startswith']
