@@ -288,4 +288,5 @@
         - 원칙적으로는 method의 parameter로 표현하지만, 실무에서는 대부분 argument로 통칭한다. 왜냐하면 딥러닝에서 업데이트되는 웨이트를 파라미터라고 주로 표현하기 때문이다. 파이썬은 거의 ai나 새로운 기능을 구현할 때 많이 사용되니까..
     - super() on the __init__에만 사용되는게 아니다. 그냥 parent class의 메서드를 호출하거나 할때 사용되지만 실무적으로 parent의 parameter를 상속받은 child class의 생성자에서 호출해줘야지 업데이트를 편하게 할 수 있기 때문에 주로 이중상속의 생성자는 child class의 생성자에서 호출되는게 흔할 뿐이다.
 
-9. `gitignore` extension 설치하고, add gitignore하면 좋다. (없이 그냥 해도 된다.)
+9. `gitignore` extension 설치하고, add gitignore하면 좋다. 
+(없이 그냥 해도 된다.)

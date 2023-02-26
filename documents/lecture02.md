@@ -41,9 +41,9 @@
 
 6. tip
     - "CSRF_TRUSTED_ORIGINS(403)" 에러 뜨는 분들은 `config/settings.py`에 다음과 같이 입력
-
+    ```
     `CSRF_TRUSTED_ORIGINS=['https://*.[사이트도메인]']`
-
+    ```
 <br>
 <Br>
 
@@ -58,7 +58,7 @@
         setting.py의 변수를 다음과 같이 바뀌면 서버 재시작되면서, local time이 바뀌는데 이처럼 프레임워크는 이미 짜여진 구조에 변수를 변경하거나 특정 인터페이스에 맞게 개발을 하면 그것을 호출함
         TIME_ZONE = "Asia/Seoul"
         ```
-    - 
+    
 
 ### Concept of Application in django
 1. application
